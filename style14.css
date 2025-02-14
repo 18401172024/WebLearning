@@ -5,7 +5,7 @@
 
 .main{
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(hara.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(youth11.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -274,7 +274,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url('hara.jpg') no-repeat center center/cover;
+    background: url('youth11.png') no-repeat center center/cover;
 }
 .review {
     padding: 50px 10%;
@@ -347,7 +347,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('hara.jpg') no-repeat center center/cover;
+    background: url('youth11.png') no-repeat center center/cover;
     color: #6d0606;
     text-align: center;
 }
