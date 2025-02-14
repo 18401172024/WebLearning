@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Development</title>
+    <link rel="stylesheet" href="style17.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">Skill Development</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#browseSkills">Browse Skills</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="join-btn">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Learn & Improve Your Skills</h1>
+            <p>Enhance your career with the best skill development programs. Find the right skill that matches your goals.</p>
+            <div class="search-box">
+                <input type="text" placeholder="What kind of skill are you looking for?">
+                <button>Search</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="skill.jpg" alt="Skill Development">
+        </div>
+    </section>
+    <section class="skills-section" id="browseSkills">
+        <h2 style="text-align: center;">Enhance Your Skills with Our Platform</h2>
+          <p>Boost your career by learning and mastering in-demand skills.</p>
+    
+        <div class="skills-container">
+            <div class="skill-box">
+                <img src="communication.webp.jpg" alt="Technical Skills">
+                <h3>Master Coding</h3>
+                <p>Learn programming languages like Python, JavaScript, and more to build amazing projects.</p>
+            </div>
+    
+            <div class="skill-box">
+                <img src="career.jpg" alt="Career Development">
+                <h3>Career Growth</h3>
+                <p>Develop essential career-building skills like resume writing, interview preparation, and networking.</p>
+            </div>
+    
+            <div class="skill-box">
+                <img src="communication.webp.jpg" alt="Soft Skills">
+                <h3>Effective Communication</h3>
+                <p>Enhance your verbal and written communication skills to excel in both personal and professional life.</p>
+            </div>
+    
+            <div class="skill-box">
+                <img src="mind.webp.jpg" alt="Life Skills">
+                <h3>Mindfulness & Well-Being</h3>
+                <p>Learn stress management, emotional intelligence, and mindfulness techniques for a balanced life.</p>
+            </div>
+        </div>
+    </section>
+  
+    <section class="learning-path-section">
+        <h1 class="lp-heading">📚 Learning Path & Resources</h1>
+        <p class="lp-subtext">Step-by-step guidance to build skills and grow your career.</p>
+    
+        <div class="lp-container">
+    
+            <!-- Technical Skills -->
+            <div class="lp-card">
+                <h2>💻 Technical Skills</h2>
+                <p>Master coding, web development, AI, and cybersecurity.</p>
+                <ul>
+                    <li>🟢 Basic: HTML, CSS, JavaScript</li>
+                    <li>🔵 Intermediate: Web & app development</li>
+                    <li>🟣 Advanced: AI, blockchain, cybersecurity</li>
+                    <li>🟠 Expert: Industry projects & hackathons</li>
+                </ul>
+            </div>
+    
+            <!-- Soft Skills -->
+            <div class="lp-card">
+                <h2>🗣 Soft Skills</h2>
+                <p>Improve communication, leadership, and confidence.</p>
+                <ul>
+                    <li>🟢 Basic: Communication & teamwork</li>
+                    <li>🔵 Intermediate: Public speaking & networking</li>
+                    <li>🟣 Advanced: Leadership & emotional intelligence</li>
+                    <li>🟠 Expert: Team management & decision-making</li>
+                </ul>
+            </div>
+    
+            <!-- Life Skills -->
+            <div class="lp-card">
+                <h2>🌱 Life Skills</h2>
+                <p>Master time management, financial literacy, and well-being.</p>
+                <ul>
+                    <li>🟢 Basic: Goal setting & time management</li>
+                    <li>🔵 Intermediate: Budgeting & self-discipline</li>
+                    <li>🟣 Advanced: Personal finance & entrepreneurship</li>
+                    <li>🟠 Expert: Business scaling & investment</li>
+                </ul>
+            </div>
+    
+            <!-- Career Growth -->
+            <div class="lp-card">
+                <h2>🎯 Career Growth</h2>
+                <p>Build your resume, personal brand, and job-ready skills.</p>
+                <ul>
+                    <li>🟢 Basic: Resume writing & self-assessment</li>
+                    <li>🔵 Intermediate: Freelancing & LinkedIn branding</li>
+                    <li>🟣 Advanced: Job interviews & networking</li>
+                    <li>🟠 Expert: Personal branding & entrepreneurship</li>
+                </ul>
+            </div>
+    
+        </div>
+    </section>
+     
+    
+    <div class="skill-tracker-container">
+        <img src="pg1.jpg" alt="Learning Illustration" class="side-image left">
+    
+        <h2>Track Your Skills & Career Growth</h2>
+        <p>Monitor your progress and achieve your career goals.</p>
+    
+        <form id="skill-form" class="skill-tracker-form">
+            <label for="skill">Skill Name:</label>
+            <input type="text" id="skill" placeholder="Enter a skill (e.g., JavaScript, Public Speaking)" required>
+    
+            <label for="progress">Skill Progress:</label>
+            <select id="progress">
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+    
+            <label for="career-goal">Career Goal:</label>
+            <input type="text" id="career-goal" placeholder="Enter your career goal (e.g., Web Developer)" required>
+    
+            <label for="resources">Learning Resources:</label>
+            <textarea id="resources" placeholder="List courses, books, or videos..."></textarea>
+    
+            <button type="submit">Save Progress</button>
+        </form>
+    
+        <h3>Your Tracked Skills</h3>
+        <ul id="skill-list" class="skill-list"></ul>
+         </div>
+      
+  
+    <div class="mentorship-container">
+        <h2>🔹 Find the Right Mentor for You</h2>
+        <p>Learn from experienced professionals and book mentorship sessions easily.</p>
+    
+        <!-- Filters -->
+        <div class="filter-container">
+            <select id="skillFilter" class="filter-select" onchange="filterMentors()">
+                <option value="all">All Skills</option>
+                <option value="technical">Technical Skills</option>
+                <option value="soft">Soft Skills</option>
+                <option value="life">Life Skills</option>
+            </select>
+    
+            <select id="availabilityFilter" class="filter-select" onchange="filterMentors()">
+                <option value="all">All Availability</option>
+                <option value="available">Available Now</option>
+                <option value="busy">Busy</option>
+            </select>
+        </div>
+    
+        <!-- Mentors List -->
+        <div class="mentor-list" id="mentorList">
+            <!-- Mentor Cards Will be Inserted Dynamically Here -->
+        </div>
+    </div>
+    
+    <div class="poll-section">
+        <div class="poll-container">
+            <h2 id="poll-question">📊 Live Poll: What is the biggest challenge for youth today?</h2>
+            <p>Vote below to share your opinion:</p>
+    
+            <div class="poll-options">
+                <button class="poll-btn" onclick="vote('jobs')">💼 Job Opportunities</button>
+                <button class="poll-btn" onclick="vote('mentalHealth')">🧠 Mental Health</button>
+                <button class="poll-btn" onclick="vote('education')">📚 Education System</button>
+                <button class="poll-btn" onclick="vote('technology')">🌍 Impact of Technology</button>
+            </div>
+    
+            <h3>📈 Poll Results:</h3>
+            <div class="poll-results">
+                <div class="poll-bar">
+                    <span>💼 Job Opportunities</span>
+                    <div class="bar" id="bar-jobs">0%</div>
+                </div>
+                <div class="poll-bar">
+                    <span>🧠 Mental Health</span>
+                    <div class="bar" id="bar-mentalHealth">0%</div>
+                </div>
+                <div class="poll-bar">
+                    <span>📚 Education System</span>
+                    <div class="bar" id="bar-education">0%</div>
+                </div>
+                <div class="poll-bar">
+                    <span>🌍 Impact of Technology</span>
+                    <div class="bar" id="bar-technology">0%</div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="custom-contact-container">
+        <h2 class="custom-contact-title">Contact Us</h2>
+        <p class="custom-contact-subtext">Have questions or need assistance? Get in touch with us.</p>
+    
+        <div class="custom-contact-content">
+            <!-- Contact Details -->
+            <div class="custom-contact-info">
+                <h3>Our Office</h3>
+                <p>📍 123 Startup Street, New Delhi, India</p>
+                <p>📞 +91 98765 43210</p>
+                <p>📧 contact@startupconnect.com</p>
+            </div>
+    
+            <!-- Contact Form -->
+            <div class="custom-contact-form" id="contact">
+                <h3>Send Us a Message</h3>
+                <form id="customContactForm">
+                    <input type="text" id="customName" placeholder="Your Name" required>
+                    <input type="email" id="customEmail" placeholder="Your Email" required>
+                    <textarea id="customMessage" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="javascript.js"></script>    
+</body>
+</html>

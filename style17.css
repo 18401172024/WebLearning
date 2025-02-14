@@ -1,0 +1,813 @@
+/* Reset styles */
+body, h1, p, ul, li, a, button, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #165a32;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.join-btn {
+    background: white;
+    color: #165a32;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+    margin-bottom: 150px; /* Adjust this value for a larger gap */
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    color: #165a32;
+    margin-bottom: 15px;
+}
+
+
+
+.hero-content p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #165a32;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.search-box button {
+    background: #165a32;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-image img {
+    width: 600px;
+    border-radius: 10px;
+}
+
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    justify-content: space-between;  /* Keeps spacing even */
+    flex-wrap: nowrap;  /* Prevents wrapping to the next line */
+    gap: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    overflow-x: auto;  /* Enables horizontal scrolling if needed */
+}
+
+/* Skill Box */
+.skill-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;  /* Allows dynamic sizing */
+    min-width: 200px;  /* Ensures they don’t shrink too much */
+    max-width: 23%;  /* Adjusted width to fit four in one row */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+}
+
+.skill-box img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-box h3 {
+    font-size: 1.2em;
+    color: #165a32;
+    margin-bottom: 10px;
+}
+
+.skill-box p {
+    font-size: 1em;
+    text-align: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Ensure text stays readable */
+.skill-box h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #165a32;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .skills-container {
+        overflow-x: auto; /* Allows scrolling if necessary */
+        justify-content: flex-start; /* Aligns items to the left */
+    }
+
+    .skill-box {
+        min-width: 250px; /* Prevents shrinking */
+        max-width: 30%; /* Slightly larger for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-wrap: wrap; /* Allows wrapping for small screens */
+        justify-content: center;
+    }
+
+    .skill-box {
+        max-width: 100%; /* Stacks items vertically */
+    }
+}
+
+
+
+/* Increase font size of "Enhance Your Skills with Our Platform" */
+.skills-section h2 {
+    font-size: 3em; /* Bigger text */
+    font-weight: bold;
+    color: #165a32;
+    text-align: center;
+    margin-bottom: 5px; /* Reduce gap */
+}
+
+/* Center "Boost your career" and adjust spacing */
+.skills-section p {
+    font-size: 1.5em;
+    text-align: center;
+    color: #555;
+    margin-bottom: 0px; /* No extra space below */
+}
+
+/* Reduce top margin of skill boxes */
+.skills-container {
+    margin-top: 10px; /* Reduce space between text and skill boxes */
+}
+
+/* Keep skill box size the same */
+.skill-box {
+    width: 22%;
+}
+
+
+
+
+
+
+/* Skill Tracker Section */
+.skill-tracker-container {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 200px auto;
+}
+
+.skill-tracker-container h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skill-tracker-container p {
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.skill-tracker-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #2c3e50;
+}
+
+.skill-tracker-form input,
+.skill-tracker-form select,
+.skill-tracker-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.skill-tracker-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+.skill-tracker-form button:hover {
+    background: #218838;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.skill-list li {
+    background: #e9ecef;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+
+
+
+/* Section Heading */
+.lp-heading {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.lp-subtext {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Cards Container */
+.lp-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Individual Cards */
+.lp-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.lp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Titles */
+.lp-card h2 {
+    font-size: 1.3rem;
+    color: #16a085;
+    margin-bottom: 10px;
+}
+
+/* Card Paragraph */
+.lp-card p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* List Items */
+.lp-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lp-card li {
+    font-size: 0.9rem;
+    background: #ecf0f1;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+
+
+
+
+
+/* Add space between sections */
+.learning-path-section {
+    margin-top: 50px; /* Adjusts space above "Learning Path & Resources" */
+    padding: 40px; /* Ensures spacing inside the section */
+}
+
+/* Center align "Learning Path & Resources" heading */
+.lp-heading {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center; /* Ensures center alignment */
+}
+
+/* Center align the subtext */
+.lp-subtext {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px; /* Adds spacing below subtext */
+    text-align: center; /* Center align text */
+}
+
+/* Ensure gap between previous section and this section */
+.learning-path-section::before {
+    content: "";
+    display: block;
+    height: 40px; /* Space between previous section and this */
+}
+.skill-tracker-container {
+    margin-top: 60px; /* Adjust this value for more spacing */
+    padding: 30px;
+}
+
+
+
+
+
+
+/* General Mentorship Container */
+.mentorship-container {
+    max-width: 1100px;
+    margin: 200px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Heading */
+.mentorship-container h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Filters */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-select {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-select:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* Mentor Cards Grid */
+.mentor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Mentor Card */
+.mentor-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.mentor-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Mentor Image */
+.mentor-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #007bff;
+}
+
+/* Mentor Name */
+.mentor-card h3 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+/* Mentor Bio */
+.mentor-card .mentor-bio {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    height: 60px;
+    overflow: hidden;
+}
+
+/* Mentor Stats */
+.mentor-stats {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.mentor-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.book-session, .chat-mentor, .apply-mentorship {
+    background: #007bff;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+    font-size: 14px;
+}
+
+.chat-mentor {
+    background: #28a745;
+}
+
+.apply-mentorship {
+    background: #ff6600;
+}
+
+.book-session:hover {
+    background: #0056b3;
+}
+
+.chat-mentor:hover {
+    background: #218838;
+}
+
+.apply-mentorship:hover {
+    background: #e65c00;
+}
+
+
+
+
+/* Contact Container */
+.custom-contact-container {
+    width: 70%; /* Increased width */
+    max-width: 1000px; /* Added max-width for responsiveness */
+    margin: 150px auto; /* Reduced top margin for better alignment */
+    padding: 30px; /* Increased padding for better spacing */
+    background: #fff;
+    border-radius: 15px; /* Slightly increased border radius for a modern look */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for better depth */
+    text-align: center;
+}
+
+/* Title & Subtext */
+.custom-contact-title {
+    font-size: 32px; /* Slightly bigger title */
+    margin-bottom: 15px;
+}
+
+.custom-contact-subtext {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px; /* Added margin for better spacing */
+}
+
+/* Layout */
+.custom-contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px; /* Added gap for better spacing */
+    margin-top: 40px; /* Increased margin for better separation */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Contact Info */
+.custom-contact-info {
+    flex: 1;
+    text-align: left;
+    padding: 25px; /* Increased padding */
+    font-size: 18px; /* Bigger text */
+    line-height: 1.8; /* Improved readability */
+}
+
+/* Contact Form */
+.custom-contact-form {
+    flex: 1;
+    text-align: left;
+    padding: 25px;
+}
+
+.custom-contact-form h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+.custom-contact-form input,
+.custom-contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Slightly bigger for smoother UI */
+    font-size: 17px;
+}
+
+/* Button Styling */
+.custom-contact-form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: #ff9800;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.custom-contact-form button:hover {
+    background: #e68900;
+    transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .custom-contact-content {
+        flex-direction: column;
+        gap: 20px; /* Reduce gap on smaller screens */
+    }
+
+    .custom-contact-container {
+        width: 90%;
+        margin: 100px auto;
+        padding: 20px; /* Reduce padding for mobile */
+    }
+}
+
+
+.mentorship-container {
+    margin-top: 200px; /* Adjust the gap as needed */
+}
+
+
+
+
+/* Container to align form and images */
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Adjust spacing between elements */
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+}
+
+/* Adjust the form container */
+.skills-form {
+    flex: 1;
+    max-width: 600px; /* Adjust width as needed */
+}
+
+/* Styling for images */
+.side-image {
+    width: 180px; /* Adjust size */
+    height: auto;
+    max-width: 100%;
+    object-fit: cover; /* Ensures better image scaling */
+}
+
+/* Responsive: Stack on smaller screens */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* General poll container */
+.poll-container {
+    background: white;
+    padding: 30px; /* Increased padding */
+    max-width: 800px; /* Increased width */
+    width: 90%; /* Ensures responsiveness */
+    margin: 150px auto; /* Adjusted margin for better spacing */
+    border-radius: 12px; /* Slightly increased border radius */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    text-align: center;
+}
+
+/* Poll heading */
+.poll-container h2 {
+    font-size: 28px; /* Bigger text */
+    color: #333;
+    margin-bottom: 15px; /* Added spacing */
+}
+
+/* Poll description */
+.poll-container p {
+    font-size: 18px; /* Slightly bigger */
+    color: #555;
+    margin-bottom: 20px; /* Improved spacing */
+}
+
+/* Options layout */
+.poll-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased spacing */
+    margin-bottom: 25px;
+}
+
+/* Option button */
+.poll-btn {
+    padding: 14px; /* Increased padding */
+    font-size: 18px; /* Bigger text */
+    border: none;
+    cursor: pointer;
+    background: #165a32;
+    color: white;
+    border-radius: 6px; /* Slightly bigger */
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.poll-btn:hover {
+    background: #165a32;
+    transform: scale(1.05);
+}
+
+/* Results layout */
+.poll-results {
+    text-align: left;
+    margin-top: 15px; /* Increased spacing */
+}
+
+/* Poll bar background */
+.poll-bar {
+    background: #ddd;
+    border-radius: 8px; /* Increased border radius */
+    margin: 10px 0;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 35px; /* Increased height */
+}
+
+/* Poll progress */
+.bar {
+    height: 100%;
+    background: #28a745;
+    color: white;
+    text-align: center;
+    line-height: 35px; /* Adjusted for new height */
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+    font-weight: bold;
+    font-size: 16px; /* Bigger text */
+}
+
+/* Extra margin to prevent breaking layout */
+.poll-section {
+    margin-top: 70px; /* Increased spacing */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .poll-container {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .poll-container h2 {
+        font-size: 24px;
+    }
+
+    .poll-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .bar {
+        font-size: 14px;
+    }
+}

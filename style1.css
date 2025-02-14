@@ -1,0 +1,549 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    background-color: #1f3d2b;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.join-btn {
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-images {
+    display: flex;
+    gap: 20px;
+}
+
+.image-box {
+    position: relative;
+}
+
+.image-box img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.floating-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Jobs Section */
+.jobs-section {
+    text-align: center;
+    padding: 50px;
+}
+.jobs-section p{
+    margin-bottom: 20px;
+}
+.jobs-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.job-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 250px;
+    text-align: center;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.job-card img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .search-bar {
+        justify-content: center;
+    }
+
+    .hero-images {
+        flex-direction: column;
+    }
+
+    .jobs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+/* Startup Opportunities Section */
+.startup-opportunities {
+    background: linear-gradient(to right, #faf9f9, #d5deca);
+    color: #060606;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.startup-opportunities .container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.startup-opportunities h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.startup-opportunities p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.opportunity-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-group input,
+.input-group select {
+    background: #fff;
+    color: #333;
+}
+
+.input-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+.btn-submit {
+    background: #ffcc00;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: #ffaa00;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .startup-opportunities .container {
+        padding: 20px;
+    }
+
+    .startup-opportunities h2 {
+        font-size: 24px;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* Investor Registration Section */
+.investor-registration {
+    background: linear-gradient(to right, #e4ebe4, #d6d7d7);
+    color: #030303;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.investor-registration .container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.investor-registration h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.investor-registration p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-group input,
+.input-group select {
+    background: #fff;
+    color: #333;
+}
+
+.input-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-register {
+    background: #ffcc00;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-register:hover {
+    background: #ffaa00;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .investor-registration .container {
+        padding: 20px;
+    }
+
+    .investor-registration h2 {
+        font-size: 24px;
+    }
+
+    .btn-register {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+/* Stats Section */
+.stats-section {
+    background: linear-gradient(to right, #fbfcfb, #cfcfcf);
+    color: #0b0606;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.stats-section .container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.stats-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.stats-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+.stat-box h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.stat-box p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .stats-section h2 {
+        font-size: 26px;
+    }
+
+    .stat-box h3 {
+        font-size: 30px;
+    }
+}
+
+
+
+
+/* Contact Us Section */
+.contact-section {
+    background: url('khali.jpeg') no-repeat center center/cover;
+    color: #080808;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section .container {
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(229, 231, 229, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.contact-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contact-info i {
+    color: #f39c12;
+    margin-right: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #f39c12;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        text-align: center;
+    }
+}
