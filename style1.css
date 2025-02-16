@@ -285,6 +285,9 @@ h3 {
 
 
 
+
+
+
 /* Investor Registration Section */
 .investor-registration {
     background: linear-gradient(to right, #e4ebe4, #d6d7d7);
@@ -349,13 +352,6 @@ h3 {
     resize: none;
 }
 
-.checkbox-group {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
 .btn-register {
     background: #ffcc00;
     color: #000;
@@ -386,6 +382,8 @@ h3 {
         font-size: 14px;
     }
 }
+
+
 
 
 
